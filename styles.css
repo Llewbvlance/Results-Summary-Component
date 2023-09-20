@@ -1,0 +1,225 @@
+body{
+    height: 100vh;
+    box-sizing: border-box;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+.pbox1{
+    background-image:linear-gradient(180deg,  hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 30px;
+    left:0;
+    position: absolute;
+}
+
+.circle{
+    background-image:linear-gradient(180deg, hsla(256, 72%, 46%, 1),  hsla(241, 72%, 46%, 0));
+    border-radius: 100%;
+    text-align: center;
+    padding: 50px 50px;
+    width:50px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 20px;
+    
+}
+
+.score{
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.one{
+    text-align: center;
+    padding: 10px 25px 40px 25px;
+    opacity: 70%;
+    margin-top: 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+#result{
+    opacity: 70%;
+}
+
+h3{
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.container{
+    position: relative;
+    
+}
+
+.pbox2{
+    background:white;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    border-radius: 30px;
+    top:0;
+    left:250px;
+    position: absolute;
+    padding-left: 80px;
+    box-shadow: 2px 2px 50px hsla(241, 100%, 89%, 50%);
+   
+}
+
+#overallreact{
+    display: flex;
+    justify-content: space-between;
+    width: 220px;
+    background-color: hsla(0, 100%, 67%, 10%);
+    padding: 10px 10px;
+    border-radius: 10px;
+    margin: 0px 0px 10px 0px;
+}
+
+#react1{
+    display: flex;
+    color: hsl(0, 100%, 67%);
+}
+
+svg{
+    padding-right: 10px;
+}
+
+
+#react3{
+    font-weight: 700;
+    color: hsl(224, 30%, 27%,) ;
+    
+}
+
+#react4{
+     opacity: 60%;
+}
+
+#overallmemory{
+    display: flex;
+    justify-content: space-between;
+    width: 220px;
+    background-color: hsla(39, 100%, 56%, 10%);
+    padding: 10px 10px;
+    border-radius: 10px;
+    margin: 10px 0px;
+}
+
+#memory1{
+    display: flex;
+    color:  hsl(39, 100%, 56%);
+}
+
+
+#memory3{
+    font-weight: 700;
+    color: hsl(224, 30%, 27%,) ;
+    
+}
+
+#memory4{
+     opacity: 60%;
+}
+
+#overallverbal{
+    display: flex;
+    justify-content: space-between;
+    width: 220px;
+    background-color: hsla(166, 100%, 37%, 10%);
+    padding: 10px 10px;
+    border-radius: 10px;
+    margin: 10px 0px;
+}
+
+#verbal1{
+    display: flex;
+    color: hsl(166, 100%, 37%);
+}
+
+#verbal3{
+    font-weight: 700;
+    color: hsl(224, 30%, 27%,) ;
+    
+}
+
+#verbal4{
+     opacity: 60%;
+}
+
+#overallvisual{
+    display: flex;
+    justify-content: space-between;
+    width: 220px;
+    background-color: hsla(234, 85%, 45%, 10%);
+    padding: 10px 10px;
+    border-radius: 10px;
+    margin: 10px 0px 50px 0px;
+}
+
+#visual1{
+    display: flex;
+    color: hsl(234, 85%, 45%);
+}
+
+#visual3{
+    font-weight: 700;
+    color: hsl(224, 30%, 27%,) ;
+    
+}
+
+#visual4{
+     opacity: 60%;
+}
+
+.btn{
+    border: none;
+    background: hsl(224, 30%, 27%);
+    color: white;
+    width:240px;
+    padding:15px 10px;
+    border-radius: 50px;
+    margin-right: 25px;
+    margin-bottom: 27px;
+    z-index: 2;
+   
+}
+
+.btn:hover{
+    background:hsl(241, 81%, 54%) ;
+}
+
+@media (max-width: 375px) {
+    
+  
+  
+
+    .pbox1 {
+      width: 100%; /* Set both elements to full width */
+      left: 0; /* Reset the left position */
+       /* Remove absolute positioning */
+      top:0;
+     order: 1; 
+    
+  }
+  
+  
+    .pbox2 {
+        width: 100%; /* Set both elements to full width */
+      left: 0; /* Reset the left position */
+      top:420px;
+      position: relative; /* Remove absolute positioning */
+      order: 2; /* Set .pbox2 to appear second in the stacking order */
+      padding-left: 20px;
+    }
+}
